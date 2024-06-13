@@ -15,7 +15,7 @@ OBJS := $(shell ls *.c | sed 's/\.c/.o/' | sed 's/ /\n/g' | sort | uniq | tr '\n
 
 depend: clean
 	@echo "* Making dependencies for $(OBJS)"
-	@$(MAKE) -s $(OBJS)
+    @$(MAKE) -s $(OBJS)
 	@echo "* Making dependencies - done"
 
 clean:
